@@ -1,6 +1,27 @@
-## Дополнительные материалы для выполнения домашних заданий из блока "Введение в DevOps"
+# GitLab CI/CD в Яндекс.Облаке  
+Выполнил: **Гридин Владимир Александрович**  
+Курс: Netology, занятие «GitLab»
 
+---
 
-- [Дополнительный материал для занятия "8.2. Что такое DevOps. СI/СD"](CICD/8.2-hw.md)
+## Задание 1. Развёртывание GitLab и регистрация runner
 
-- [Дополнительный материал для занятия "8.3. GitLab"](https://github.com/netology-code/sdvps-materials/tree/main/gitlab)
+1. GitLab запущен в Яндекс.Облаке по адресу  
+   [http://51.250.7.143](http://51.250.7.143) (root / ваш пароль).
+2. Создан проект `my-project`, зарегистрирован runner с executor **docker**.
+
+Скриншот активного runner:  
+![runner-active](screenshots/runner-active.png)
+
+---
+
+## Задание 2. CI/CD-пайплайн
+
+1. Проект запушен в GitLab:
+   ```bash
+   git remote add origin http://root:*траляля*@51.250.7.143/root/my-project.git
+   git push -u origin main
+
+Скриншот pipeline:
+![pipeline-passed](screenshots/pipeline-passed.png)
+
